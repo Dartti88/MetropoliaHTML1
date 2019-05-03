@@ -1,5 +1,9 @@
 body {
-    background-color: gray;
+    background-image: url("../images/Rain.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     margin: 0;
 }
 
@@ -46,6 +50,7 @@ body {
     padding-top: 1px;
     background-color: aqua;
     display: table;
+    height: 80%;
     border-radius: 15px;
 }
 
@@ -53,6 +58,7 @@ body {
     background-color: #3e8e41;
     box-shadow: 0 1px #666;
     transform: translateY(0px);
+    transition: 10ms;
 }
 
 #button p {
