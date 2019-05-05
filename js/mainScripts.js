@@ -45,3 +45,27 @@ function hideDropDownList() {
 /*
  * End of functions for dropdown list
  */
+
+/*
+ * Weather&Background functions
+ */
+function saatiedotLeiritiella(lat, lon) {
+  var key = '61307b4077223d705a311cfc93df2046';
+  fetch('https://api.openweathermap.org/data/2.5/weather?' +
+      'lat=' + lat + '&lon=' + lon + '&appid=' + key)
+      .then(function(vastaus) { return vastaus.json() })
+      .then(function(data) {
+        naytaSaa(data);
+      })
+      .catch(function () {
+        //virheet
+      });
+  function naytaSaa(d) {
+    var saa = d.weather[0].main;
+    if (saa === 'Clouds') {
+      console.log('Oli se');
+      var body = document.getElementsByTagName('body')[0];
+      body.style.backgroundImage = "url('../images/pilvinenSaa.gif')";
+    }
+  }
+}
