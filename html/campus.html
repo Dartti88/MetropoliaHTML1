@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>Kampukset</title>
     <link rel="stylesheet" type="text/css" href="../css/mainStyles.css">
+    <link rel="stylesheet" type="text/css" href="../css/lightbox.css"/>
+
+    <style>
+        .thumb {
+            max-width: 22%;
+            padding: 1%;
+        }
+    </style>
 </head>
 <body>
 
@@ -20,9 +28,21 @@
 </div>
 
 <div class="content">
-    <p>WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW</p>
+    <script language="javascript" type="text/javascript">
+        for (var i=1;i<=12;i++)
+        {
+          document.write
+            (
+            '<a href="../images/luokat/luokka' + i + '.png" data-lightbox="galleria" data-title="Luokka' + i + '"><img class="thumb" src="../images/luokat/thumb/thum' + i + '.png" alt="kuva' + i + '"></a>'
+            )
+        }
+    </script>
+
+
 </div>
 
+
 <script language="javascript" type="text/javascript" src="../js/mainScripts.js"></script>
+<script src="../js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
