@@ -5,12 +5,13 @@ body {
     background-position: center;
     background-size: cover;
     margin: 0;
+    min-width: 770px;
 }
 
 .bruce {
     background-color: white;
     width: 100%;
-    height: 11.5vh;
+    height: 86px;
     top: 0;
     left: 0;
     position: sticky;
@@ -29,9 +30,9 @@ body {
     width:60%;
     height:70%;
     margin-left: 20%;
-    background-color:#999999;
+    background-color:#CCCCCC;
     position:absolute;
-    bottom:0px;
+    bottom:0;
     display: flex;
     align-items: normal;
     justify-content: center;
@@ -42,8 +43,8 @@ body {
     background-color: aqua;
     width: 100%;
     height: 100%;
-    border-radius: 15px;
-
+    border-radius: 10px;
+    display: table;
 }
 
 .button:active {
@@ -58,9 +59,10 @@ body {
 }
 
 .navLink {
-    width: 15%;
-    height: 80%;
-    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
     position: relative;
     float: left;
 }
@@ -76,3 +78,25 @@ body {
      color: white;
      padding: 20px;
  }
+
+#dropDownList {
+    width: 5px;
+    height: 0px;
+    position: absolute;
+    background-color: #3e8e41;
+    transition: 0.2s;
+    overflow: hidden;
+    top: 50px;
+    margin-left: 10px;
+}
+
+#dropDownListContent {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display:table;
+}
+#dropDownListContent li {
+    list-style: none;
+    border: solid black 2px;
+}
