@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <title>Myyrmäki</title>
     <link rel="stylesheet" type="text/css" href="../css/mainStyles.css">
+    <link rel="stylesheet" type="text/css" href="../css/lightbox.css"/>
 </head>
 <body>
 
 <div class="bruce">
     <div id="relativity">
-        <img id="logo" src="images/metropoliaPyoryla.png" alt="Metropolian logo">
+        <img id="logo" src="../images/metropoliaPyoryla.png" alt="Metropolian logo">
         <div class="buttonContainer">
-            <a class="navLink" href="index.html"><img class="navImages" src="images/home.png" alt="kotisivuun"><p class="linkText">testi</p></a>
-            <a class="navLink"  href="html/services.html"><img class="navImages" src="images/palvelut.png" alt="palvelut"></a>
+            <a class="navLink" href="../index.html"><img class="navImages" src="../images/home.png" alt="kotisivuun"><p class="linkText">testi</p></a>
+            <a class="navLink"  href="services.html"><img class="navImages" src="../images/palvelut.png" alt="palvelut"></a>
             <div id="listHolder">
-                <a class="navLink"  href="html/campus.html"><img class="navImages" id="dropDownButton" src="images/kampukset.png" alt="kampukset sivuun"></a>
+                <a class="navLink"  href="campus.html"><img class="navImages" id="dropDownButton" src="../images/kampukset.png" alt="kampukset sivuun"></a>
                 <div id="dropDownList"><div id="dropDownListContent">
-
+                    <a href="arabia.html"><div class="campusLinks"> Arabia </div></a>
+                    <a href="karakallio.html"><div class="campusLinks"> Karakallio </div></a>
+                    <a href="myllypuro.html"><div class="campusLinks"> Myllypuro </div></a>
+                    <a href="myyrmaki.html"><div class="campusLinks"> Myyrmäki </div></a>
                 </div>
                 </div>
             </div>
-            <a class="navLink"  href="html/study.html"><img class="navImages" src="images/opiskelu.png" alt="opiskeluun"></a>
+            <a class="navLink"  href="study.html"><img class="navImages" src="../images/opiskelu.png" alt="opiskeluun"></a>
         </div>
 
     </div>
@@ -29,12 +33,30 @@
 <div class="content">
     <div class="contentBox">
         <div class="contentHeader">TESTI HEADER</div>
+        <script language="javascript" type="text/javascript">
+          document.write('<h1>Myyrmäen kampuksen C-rakennus</h1><br><p>Kevät 2019 suijui mukavasti Myyrmäen kampuksessa. ' +
+              'Tilanpuutteesta johtuen siirrymme vuoden 2020 alusta [ehkä] Karakallioon, joka on hyvien kulkuyhteyksien päässä; paikalle pääsee jopa alle kolmessa tunnissa.</p>' +
+              '<p>Kuvasimme Myyrmäen täyteen bookattuja tiloja arkiperjantaina noin kello 10. Saimme samalla ikuistettua koulumme ahkeria opiskelijoita. Koputtamalla luokanoveen opetusta sai häiritä kuvan ottamisen verran.</p>');
+          for (var i=1;i<=12;i++)
+          {
+            document.write
+            (
+                '<a href="../images/luokat/luokka' + i + '.png" data-lightbox="galleria" data-title="Luokka' + i + '"><img class="thumb" src="../images/luokat/thumb/thum' + i + '.png" alt="kuva' + i + '"></a>'
+            )
+          }
+        </script>
 
         <p>WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW</p>
         <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=24.84258449123445%2C60.25776985519917%2C24.846033812027603%2C60.25865738043139&amp;layer=mapnik&amp;marker=60.2581121147076%2C24.84415304999993" style="border: 1px solid black"></iframe><br/>
     </div>
 </div>
 
-<script language="javascript" type="text/javascript" src="js/mainScripts.js"></script>
+<script language="javascript" type="text/javascript" src="../js/mainScripts.js"></script>
+<script src="../js/lightbox-plus-jquery.min.js"></script>
+<script>
+    window.onload = function() {
+        saatiedot('60.258822', '24.844585');
+    }
+</script>
 </body>
 </html>

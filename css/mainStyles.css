@@ -60,10 +60,8 @@ body {
 }
 
 .navLink {
-    width: 100px;
-    height: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     position: relative;
     float: left;
 }
@@ -115,7 +113,19 @@ body {
     padding: 0;
     width: 98px;
     height: 198px;
-    display:table;
+
+}
+
+.campusLinks {
+    width: 98px;
+    height: 49px;
+    border-bottom: solid 1px rgba(204, 204, 204, 1);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.campusLinks:nth-child(4) {
+    border-bottom: 0;
 }
 
 #logo {
@@ -131,4 +141,19 @@ body {
 
 .linkText {
 
+}
+
+.contentBox {
+    animation: fadeInRight 1s ease-in;
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
