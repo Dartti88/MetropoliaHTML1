@@ -147,7 +147,14 @@ body {
 
 }
 
-.contentBox {
+.thumb {
+    max-width: 23%;
+    padding: 1%;
+}
+.hidden {
+    opacity: 0;
+}
+.animation1 {
     animation: fadeInRight 1s ease-in;
 }
 

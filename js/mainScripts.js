@@ -88,4 +88,68 @@ function saatiedot(lat, lon) {
   }
 }
 
+/*
+ * End of weather&background functions
+ */
 
+/*
+ * Functions for checking if element on screen
+ */
+// on screen checker
+const gambitGalleryIsInView = el => {
+  const scroll = window.scrollY || window.pageYOffset
+  const boundsTop = el.getBoundingClientRect().top + scroll
+
+  const viewport = {
+    top: scroll,
+    bottom: scroll + window.innerHeight,
+  }
+
+  const bounds = {
+    top: boundsTop,
+    bottom: boundsTop + el.clientHeight,
+  }
+
+  return ( bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom )
+      || ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
+}
+
+
+// Usage HERE
+document.addEventListener( 'DOMContentLoaded', () => {
+  //Initialize elements here
+  const myy1 = document.querySelector( '#myyhidden1' );
+  const myy2 = document.querySelector( '#myyhidden2' );
+
+  const handler = () => raf( () => {
+    if (gambitGalleryIsInView( myy1 )) {
+      showElement(myy1);
+    }
+    if (gambitGalleryIsInView( myy2 )) {
+      showElement(myy2);
+    }
+  } )
+
+  handler()
+  window.addEventListener( 'scroll', handler )
+} )
+
+// requestAnimationFrame
+const raf =
+    window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    function( callback ) {
+      window.setTimeout( callback, 1000 / 60 )
+    }
+
+/*
+ * End of functions for checking if element is on screen
+ */
+
+function showElement(element) {
+  setTimeout(function() {
+    element.classList.add('animation1');
+    element.classList.remove('hidden');
+  }, 500);
+}
