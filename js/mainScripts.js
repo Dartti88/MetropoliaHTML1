@@ -56,6 +56,7 @@ function saatiedotLeiritiella(lat, lon) {
       .then(function(vastaus) { return vastaus.json() })
       .then(function(data) {
         naytaSaa(data);
+        console.log(data);
       })
       .catch(function () {
         //virheet
