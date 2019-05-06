@@ -115,14 +115,18 @@ const gambitGalleryIsInView = el => {
 }
 
 
-// Usage.
+// Usage HERE
 document.addEventListener( 'DOMContentLoaded', () => {
-  const tester = document.querySelector( '#test' )
-  const answer = document.querySelector( '#answer' )
+  //Initialize elements here
+  const myy1 = document.querySelector( '#myyhidden1' );
+  const myy2 = document.querySelector( '#myyhidden2' );
 
   const handler = () => raf( () => {
-    if (gambitGalleryIsInView( tester )) {
-      alert("TEST");
+    if (gambitGalleryIsInView( myy1 )) {
+      showElement(myy1);
+    }
+    if (gambitGalleryIsInView( myy2 )) {
+      showElement(myy2);
     }
   } )
 
@@ -142,3 +146,10 @@ const raf =
 /*
  * End of functions for checking if element is on screen
  */
+
+function showElement(element) {
+  setTimeout(function() {
+    element.classList.add('animation1');
+    element.classList.remove('hidden');
+  }, 500);
+}
