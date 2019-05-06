@@ -143,6 +143,10 @@ body {
 
 }
 
+.thumb {
+    max-width: 23%;
+    padding: 1%;
+}
 .contentBox {
     animation: fadeInRight 1s ease-in;
 }
