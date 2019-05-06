@@ -17,7 +17,7 @@ function hoverList() {
     if (listShown==false) {
       showDropDownList();
     }
-  }, 500);
+  }, 250);
 }
 function resetHoverTime() {
   nonHoverTime = setTimeout(function() {
@@ -49,7 +49,9 @@ function hideDropDownList() {
 /*
  * Weather&Background functions
  */
-function saatiedotLeiritiella(lat, lon) {
+
+//Säänhakufunktio
+function saatiedot(lat, lon) {
   var key = '61307b4077223d705a311cfc93df2046';
   fetch('https://api.openweathermap.org/data/2.5/weather?' +
       'lat=' + lat + '&lon=' + lon + '&appid=' + key)
@@ -63,10 +65,27 @@ function saatiedotLeiritiella(lat, lon) {
       });
   function naytaSaa(d) {
     var saa = d.weather[0].main;
+    var tarkkaSaa = d.weather[0].description;
+    var body = document.getElementsByTagName('body')[0];
     if (saa === 'Clouds') {
-      console.log('Oli se');
-      var body = document.getElementsByTagName('body')[0];
-      body.style.backgroundImage = "url('../images/pilvinenSaa.gif')";
+      if (tarkkaSaa === 'few clouds') {
+        console.log('Puolipilvistä');
+        body.style.backgroundImage = "url('../images/sää/KirkkaanSnVideo.gif')";
+      } else {
+        console.log('Pilvistä');
+        body.style.backgroundImage = "url('../images/sää/pilvinenSaa.gif')";
+      }
+    } else if (saa === 'Haze') {
+        console.log('Hazea');
+        body.style.backgroundImage = "url('../images/sää/haze.jpg')";
+    } else if (saa === 'Clear') {
+        console.log('Kirkasta');
+        body.style.backgroundImage = "url('../images/sää/KirkkaanSnVideo.gif')";
+    } else if (saa === 'Rain') {
+      console.log('Sadetta');
+      body.style.backgroundImage = "url('../images/sää/Rain.gif')";
     }
   }
 }
+
+

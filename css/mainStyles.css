@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/Rain.gif");
+    background-image: url("../images/sää/Rain.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -133,17 +133,17 @@ body {
 
 }
 
-#move {
-    animation: fadeRight 1s ease-in;
+.contentBox {
+    animation: fadeInRight 1s ease-in;
 }
 
-@-webkit-keyframes fadeRight {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
-
-
-
-
-
-
