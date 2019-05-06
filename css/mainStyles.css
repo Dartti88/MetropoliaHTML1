@@ -73,6 +73,7 @@ body {
     overflow: hidden;
     border: solid 1px rgb(221, 221, 221);
     border-radius: 5px;
+    margin-bottom: 60px;
 }
 
 .contentHeader {
@@ -81,6 +82,10 @@ body {
     width: 100%;
     background-color: rgb(245, 245, 245);
     border-bottom: solid 1px rgb(221, 221, 221);
+    color: #d56321;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #dropDownList {
@@ -151,4 +156,42 @@ body {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+#headerDiv {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    text-align: center;
+}
+
+.studyParagraph {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.studyPic {
+    max-width: 24%;
+    max-height: 300px;
+    padding: 1%;
+    margin-left: 20px;
+}
+
+.studyThumb {
+    max-width: 24%;
+    max-height: 300px;
+    padding: 1%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.sivulla {
+    position: absolute;
+    right: 13px;
+    color: #d56321;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
