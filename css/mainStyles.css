@@ -69,28 +69,40 @@ body {
 }
 
 .content {
-     background-color: rgba(243, 243, 243, 0.95);
+     background-color: rgba(255, 255, 255, 0.95);
      width: 90%;
      height: 2000px;
      margin: auto;
      position: relative;
      overflow: hidden;
      display: block;
-     color: white;
      padding: 0;
  }
 
 .contentBox {
+    width: 98%;
+    background-color: white;
+    margin: auto;
+    margin-top: 15px;
+    color: black;
+    overflow: hidden;
+    border: solid 1px rgb(221, 221, 221);
+    border-radius: 5px;
+}
+
+.contentHeader {
+    padding: 5px;
+    padding-left: 15px;
     width: 100%;
-    background-color: black;
-    margin: 0;
+    background-color: rgb(245, 245, 245);
+    border-bottom: solid 1px rgb(221, 221, 221);
 }
 
 #dropDownList {
     width: 5px;
     height: 0px;
     position: absolute;
-    background-color: #3e8e41;
+    background-color: rgba(204, 204, 204, 0.4);
     transition: 0.2s;
     overflow: hidden;
     top: 50px;
@@ -98,14 +110,12 @@ body {
 }
 
 #dropDownListContent {
-    margin: 0;
+    margin: 1px;
+    background-color: white;
     padding: 0;
-    width: 100%;
+    width: 98px;
+    height: 198px;
     display:table;
-}
-#dropDownListContent li {
-    list-style: none;
-    border: solid black 2px;
 }
 
 #logo {
