@@ -50,8 +50,8 @@ function hideDropDownList() {
  * Weather&Background functions
  */
 
-//Myyrmäen sää
-function saatiedotLeiritiella(lat, lon) {
+//Säänhakufunktio
+function saatiedot(lat, lon) {
   var key = '61307b4077223d705a311cfc93df2046';
   fetch('https://api.openweathermap.org/data/2.5/weather?' +
       'lat=' + lat + '&lon=' + lon + '&appid=' + key)
