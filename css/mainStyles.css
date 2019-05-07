@@ -74,6 +74,7 @@ body {
     border: solid 1px rgb(221, 221, 221);
     border-radius: 5px;
     margin-bottom: 60px;
+    position: relative;
 }
 
 .contentHeader {
@@ -95,7 +96,7 @@ body {
     background-color: rgba(204, 204, 204, 0.4);
     transition: 0.2s;
     overflow: hidden;
-    top: 50px;
+    top: 55px;
     margin-left: 10px;
 }
 
