@@ -66,13 +66,13 @@ body {
  }
 
 .contentBox {
-    position: relative;
     width: 98%;
     background-color: white;
     margin: auto;
     margin-top: 15px;
     margin-bottom: 30px;
     color: black;
+    overflow: hidden;
     border: solid 1px rgb(221, 221, 221);
     border-radius: 5px;
     margin-bottom: 60px;
@@ -173,7 +173,6 @@ body {
     color: #000000;
     font-size: 20px;
     padding-left: 20px;
-    padding-right: 20px;
 }
 
 .studyPic {
@@ -184,7 +183,7 @@ body {
 }
 
 .studyThumb {
-    max-width: 24%;
+    max-width: 23%;
     max-height: 300px;
     padding: 1%;
     margin-left: 20px;
