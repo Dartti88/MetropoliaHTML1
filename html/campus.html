@@ -10,13 +10,13 @@
 
 <div class="bruce">
     <div id="relativity">
-        <p class="sivulla" style="text-align: right">Kampukset</p>
-        <img id="logo" src="../images/metropoliaPyoryla.png" alt="Metropolian logo">
+        <p class="sivulla">Kampukset</p>
+        <a href="../index.html"> <img id="logo" src="../images/metropoliaPyoryla.png" alt="Metropolian logo"> </a>
         <div class="buttonContainer">
-            <a class="navLink" href="../index.html"><img class="navImages" src="../images/home.png" alt="kotisivuun" title="Kotisivu"></a>
-            <a class="navLink"  href="services.html"><img class="navImages" src="../images/palvelut.png" alt="palvelut" title="Palvelut"></a>
+            <a class="navLink" href="../index.html"><img class="navImages" src="../images/home.png" alt="kotisivuun" title="Kotisivu"><p class="linkText">Kotisivu</p></a>
+            <a class="navLink"  href="services.html"><img class="navImages" src="../images/palvelut.png" alt="palvelut" title="Palvelut"><p class="linkText">Palvelut</p></a>
             <div id="listHolder">
-                <a class="navLink"  href="campus.html"><img class="navImages" id="dropDownButton" src="../images/kampukset.png" alt="kampukset sivuun" title="Kampukset"></a>
+                <a class="navLink"  href="campus.html"><img class="navImages" id="dropDownButton" src="../images/kampukset.png" alt="kampukset sivuun" title="Kampukset"><p style="bottom: 41px;" class="linkText">Kampukset</p></a>
                 <div id="dropDownList"><div id="dropDownListContent">
                     <a href="arabia.html"><div class="campusLinks"> Arabia </div></a>
                     <a href="karakallio.html"><div class="campusLinks"> Karakallio </div></a>
@@ -25,24 +25,32 @@
                 </div>
                 </div>
             </div>
-            <a class="navLink"  href="study.html"><img class="navImages" src="../images/opiskelu.png" alt="opiskeluun" title="Opiskelu"></a>
+            <a class="navLink"  href="study.html"><img class="navImages" src="../images/opiskelu.png" alt="opiskeluun" title="Opiskelu"><p class="linkText">Opiskelu</p></a>
         </div>
 
     </div>
 </div>
 
 <div class="content">
-    <div class="contentBox" id="test">
+    <div class="contentBox">
+        <div class="contentHeader">Arabia</div>
+        <a href="arabia.html"><img class="campusImg" src="../images/kampukset/arabia.png"></a>
 
-        <div class="contentHeader">Metropolian Kampukset</div>
+    </div>
 
-        <ul>
-            <li><a href="arabia.html"><p>Arabia</p></a></li>
-            <li><a href="karakallio.html"><p>Karakallio</p></a></li>
-            <li><a href="myllypuro.html"><p>Myllypuro</p></a></li>
-            <li><a href="myyrmaki.html"><p>Myyrmäki</p></a></li>
-        </ul>
+    <div class="contentBox hidden" id="campHidden1">
+        <div class="contentHeader">Karakallio</div>
+        <a href="karakallio.html"><img class="campusImg" src="../images/kampukset/karakallio.png"></a>
+    </div>
 
+    <div class="contentBox hidden" id="campHidden2">
+        <div class="contentHeader">Myllypuro</div>
+        <a href="myllypuro.html"><img class="campusImg" src="../images/kampukset/myllypuro.png"></a>
+    </div>
+
+    <div class="contentBox hidden" id="campHidden3">
+        <div class="contentHeader">Myyrmäki</div>
+        <a href="myyrmaki.html"><img class="campusImg" src="../images/kampukset/myyrmaki.png"></a>
     </div>
 </div>
 

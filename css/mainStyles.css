@@ -40,23 +40,9 @@ body {
     padding: 0px;
 }
 
-.button {
-    background-color: aqua;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    display: table;
-}
-
-.button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 1px #666;
-    transform: translateY(0px);
+.navImages:active {
+    transform: translateY(3px);
     transition: 10ms;
-}
-
-.button p {
-    text-align: center;
 }
 
 .navLink {
@@ -68,8 +54,10 @@ body {
 
 .content {
      background-color: rgba(255, 255, 255, 0.95);
-     width: 90%;
-     height: 2000px;
+     width: 85%;
+     /*height: 2000px;
+
+      */
      margin: auto;
      position: relative;
      overflow: hidden;
@@ -83,10 +71,12 @@ body {
     background-color: white;
     margin: auto;
     margin-top: 15px;
+    margin-bottom: 30px;
     color: black;
     border: solid 1px rgb(221, 221, 221);
     border-radius: 5px;
     margin-bottom: 60px;
+    position: relative;
 }
 
 .contentHeader {
@@ -108,7 +98,7 @@ body {
     background-color: rgba(204, 204, 204, 0.4);
     transition: 0.2s;
     overflow: hidden;
-    top: 50px;
+    top: 55px;
     margin-left: 10px;
 }
 
@@ -145,7 +135,8 @@ body {
 }
 
 .linkText {
-
+    position: absolute;
+    bottom: 45px;
 }
 
 .thumb {
@@ -181,6 +172,7 @@ body {
     color: #000000;
     font-size: 20px;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .studyPic {
@@ -208,6 +200,23 @@ body {
     margin-left: 20px;
 }
 
+.studyThumb3 {
+    max-width: 24%;
+    max-height: 300px;
+    padding: 1%;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.studyThumb4 {
+    max-width: 22%;
+    max-height: 300px;
+    padding: 1%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
 #spessukeissi {
     position: relative;
     max-width: 90%;
@@ -225,4 +234,13 @@ body {
     font-weight: bold;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.campusImg {
+    margin: 25px;
+    left: 0;
+    top: 0;
+    max-width: 60%;
+    max-height: 750px;
+    position: relative;
 }
