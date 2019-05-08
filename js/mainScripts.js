@@ -125,7 +125,10 @@ document.addEventListener( 'DOMContentLoaded', () => {
   const campKar = document.getElementById('campHidden1');
   const campMyl = document.querySelector('#campHidden2');
   const campMyy = document.querySelector('#campHidden3');
-  //
+  // Opiskelu
+  const stud1 = document.getElementById('studHidden1');
+  const stud2 = document.getElementById('studHidden2');
+  const stud3 = document.getElementById('studHidden3');
 
   const handler = () => raf( () => {
 
@@ -146,6 +149,17 @@ document.addEventListener( 'DOMContentLoaded', () => {
       }
       if (gambitGalleryIsInView( campMyy )) {
         showElement(campMyy);
+      }
+    }
+    if (stud1 != null) {
+      if (gambitGalleryIsInView( stud1 )) {
+        showElement(stud1);
+      }
+      if (gambitGalleryIsInView( stud2 )) {
+        showElement(stud2);
+      }
+      if (gambitGalleryIsInView( stud3 )) {
+        showElement(stud3);
       }
     }
 
@@ -172,5 +186,5 @@ function showElement(element) {
   setTimeout(function() {
     element.classList.add('animation1');
     element.classList.remove('hidden');
-  }, 500);
+  }, 300);
 }
