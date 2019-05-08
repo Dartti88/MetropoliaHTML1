@@ -16,7 +16,7 @@ body {
     left: 0;
     position: sticky;
     margin: 0;
-    z-index: 999;
+    z-index: 100;
 }
 
 #relativity {
@@ -53,7 +53,7 @@ body {
 }
 
 .content {
-     background-color: rgba(255, 255, 255, 0.95);
+     background-color: rgba(255, 255, 255, 0.90);
      width: 85%;
      /*height: 2000px;
 
@@ -66,13 +66,13 @@ body {
  }
 
 .contentBox {
-    position: relative;
     width: 98%;
     background-color: white;
     margin: auto;
     margin-top: 15px;
     margin-bottom: 30px;
     color: black;
+    overflow: hidden;
     border: solid 1px rgb(221, 221, 221);
     border-radius: 5px;
     margin-bottom: 60px;
@@ -137,6 +137,7 @@ body {
 .linkText {
     position: absolute;
     bottom: 45px;
+    font-size: 17px;
 }
 
 .thumb {
@@ -172,7 +173,6 @@ body {
     color: #000000;
     font-size: 20px;
     padding-left: 20px;
-    padding-right: 20px;
 }
 
 .studyPic {
@@ -234,13 +234,29 @@ body {
     font-weight: bold;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    z-index: 110;
 }
 
 .campusImg {
     margin: 25px;
     left: 0;
     top: 0;
-    max-width: 60%;
-    max-height: 750px;
+    max-width: 58%;
+    max-height: 720px;
     position: relative;
+    float: left;
+}
+
+.textBox1 {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    float: left;
+    width: 30%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 20px;
 }
