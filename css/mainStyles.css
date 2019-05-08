@@ -78,12 +78,12 @@ body {
  }
 
 .contentBox {
+    position: relative;
     width: 98%;
     background-color: white;
     margin: auto;
     margin-top: 15px;
     color: black;
-    overflow: hidden;
     border: solid 1px rgb(221, 221, 221);
     border-radius: 5px;
     margin-bottom: 60px;
@@ -197,6 +197,25 @@ body {
     margin-left: 20px;
     margin-bottom: 30px;
     margin-top: 30px;
+}
+
+.studyThumb2 {
+    position: relative;
+    max-width: 40%;
+    max-height: 500px;
+    min-height: 200px;
+    padding: 2%;
+    margin-left: 20px;
+}
+
+#spessukeissi {
+    position: relative;
+    max-width: 90%;
+    min-width: 40%;
+    max-height: 320px;
+    min-height: 200px;
+    padding: 2%;
+    margin-left: 20px;
 }
 
 .sivulla {
