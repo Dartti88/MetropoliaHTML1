@@ -118,16 +118,37 @@ const gambitGalleryIsInView = el => {
 // Usage HERE
 document.addEventListener( 'DOMContentLoaded', () => {
   //Initialize elements here
+  //Myyrmäki
   const myy1 = document.querySelector( '#myyhidden1' );
   const myy2 = document.querySelector( '#myyhidden2' );
+  //Campus
+  const campKar = document.getElementById('campHidden1');
+  const campMyl = document.querySelector('#campHidden2');
+  const campMyy = document.querySelector('#campHidden3');
+  //
 
   const handler = () => raf( () => {
-    if (gambitGalleryIsInView( myy1 )) {
-      showElement(myy1);
+
+    if (myy1 != null) {
+      if (gambitGalleryIsInView( myy1 )) {
+        showElement(myy1);
+      }
+      if (gambitGalleryIsInView( myy2 )) {
+        showElement(myy2);
+      }
     }
-    if (gambitGalleryIsInView( myy2 )) {
-      showElement(myy2);
+    if (campKar != null) {
+      if (gambitGalleryIsInView( campKar )) {
+        showElement(campKar);
+      }
+      if (gambitGalleryIsInView( campMyl )) {
+        showElement(campMyl);
+      }
+      if (gambitGalleryIsInView( campMyy )) {
+        showElement(campMyy);
+      }
     }
+
   } )
 
   handler()
